@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tables and Forms Assignment</title>
+
+        <style>
+        form {
+            border: 2px solid black;
+            padding: 20px;
+            width: fit-content;
+        }
+    </style>
+    <style>
+    table {
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid black;
+        padding: 8px;
+    }
+</style>
+    </head>
+<body>
+    <form>
+    <h1>Pizza Ordering Form</h1>
+
+    <h2>Contact Information</h2>
+    <label for="inName">Name:</label>
+    <input type="text" name="inName" id="inName" required><br>
+    <label for="inPhone">Phone:</label>
+    <input type="tel" name="inPhone" id="inPhone" required><br>
+    <label for="inEmail">Email:</label>
+    <input type="email" name="inEmail" id="inEmail" required>
+
+    <h2>Select Pizza Size</h2>
+    <label for="PizzaSize">Pizza Size:</label>
+    <select name="PizzaSize" id="PizzaSize" required>
+        <option value="" disabled selected hidden>--Select Size--</option>
+        <option>Medium</option>
+        <option>Large</option>
+        <option>XLarge</option>
+    </select>
+
+    <h2>Select Sauce</h2>
+    <input type="radio" id="marinara" name="sauce" value="marinara" required>
+    <label for="marinara">Marinara</label><br>
+    <input type="radio" id="ranch" name="sauce" value="ranch">
+    <label for="ranch">Ranch</label><br>
+    <input type="radio" id="none" name="sauce" value="none">
+    <label for="none">No Sauce</label>
+    
+
+    <h2>Select Toppings</h2>
+    <input type="checkbox" name="SelectToppings"><label>Pepperoni</label>
+    <input type="checkbox" name="SelectToppings"><label>Sausage</label><br>
+    <input type="checkbox" name="SelectToppings"><label>Mushrooms</label>
+    <input type="checkbox" name="SelectToppings"><label>Pineapple</label><br>
+    <input type="checkbox" name="SelectToppings"><label>Peppers</label>
+    <input type="checkbox" name="SelectToppings"><label>Onions</label>
+
+    <h2>Additional Instructions</h2>
+    <textarea name="AdditonalInstructions">Add instructions</textarea><br>
+
+    <input type="submit" value="Submit"><br><br><br><br>
+
+      <table> 
+        <caption>List Of My Favorite Games</caption>
+        <thead>
+            <tr>
+                <th>Developer</th>
+                <th>Title</th>
+                <th>Year</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td rowspan="3">Blizzard</td>
+                <td>Warcraft 3</td>
+                <td>2002</td>
+            </tr>
+            <tr>
+                <td>World of Warcraft</td>
+                <td>2004</td>
+            </tr>
+            <tr>
+                <td>Starcraft 2</td>
+                <td>2010</td>
+            </tr>
+
+            <tr>
+                <td>DICE</td>
+                <td>Battlefield 3</td>
+                <td>2011</td>
+            </tr>
+
+            <tr>
+                <td>Valve Corporation</td>
+                <td>Dota 2</td>
+                <td>2013</td>
+            <tr>
+                <td colspan="3">Count: 5</td>
+            </tr>
+        </tbody>
+      </table>
+</form>
+  
+
+</body>
+</html>
