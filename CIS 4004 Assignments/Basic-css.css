@@ -3,11 +3,20 @@ body{
     background-color: deepskyblue;
 }
 
+h1{
+    text-align: center;
+    /* text size needs adjusting */
+}
+
 #paragraph2{
     border: 3px solid green;
     padding: 20px;
-    
+    width: 900px;
     background-color: white;
+
+    margin-left: 25px;
+
+    line-height: 1.5;
 }
 
 .blue{
