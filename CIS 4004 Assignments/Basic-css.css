@@ -8,6 +8,10 @@ h1{
     /* text size needs adjusting */
 }
 
+h2{
+
+}
+
 #paragraph2{
     border: 3px solid green;
     padding: 20px;
@@ -20,7 +24,7 @@ h1{
 }
 
 .blue{
-    background-color: blue;
+    background-color: rgb(2, 2, 156);
     padding: 10px;
 
     color: white;
@@ -34,4 +38,7 @@ ol {
     list-style-type: decimal-leading-zero;
 }
 
+table{
+    
+}
 			
