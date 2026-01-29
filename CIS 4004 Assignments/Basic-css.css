@@ -1,0 +1,28 @@
+
+body{
+    background-color: deepskyblue;
+}
+
+#paragraph2{
+    border: 3px solid green;
+    padding: 20px;
+    
+    background-color: white;
+}
+
+.blue{
+    background-color: blue;
+    padding: 10px;
+
+    color: white;
+}
+
+.w3-link{
+    color: red;
+}
+
+ol {
+    list-style-type: decimal-leading-zero;
+}
+
+			
