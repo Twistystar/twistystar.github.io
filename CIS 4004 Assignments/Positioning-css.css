@@ -1,46 +1,75 @@
 body{
-    background-color: aqua;
+    margin: 0;
 }
 
-/* Keeps the header visible at the top when scrolling */
+/* Header fixed at the top and unaffected by scrolling*/
 header{
-    position: sticky; /*Sticks to the top once reached */
+    position: fixed;
     top: 0;
+    left: 240px;
+    right: 0;
+
+
+    border: 1px solid black;
+    background-color: red;
 
     text-align: center;
+    font-size: 35px;
 }
 
 header p{
     font-size: 30px;
 }
 
-/* Increase the button size*/
+/* Nav buttons inside header */
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 90px;
+    
+    background-color: black;
+}
+
+/* Alignment, color, and sizing for nav buttons*/
 header nav button{
-    padding: 15px 30px;
+    padding: 15px;
+    width: 250px;
+    background-color: blue;
+    color: white;
+
+    font-size: large;
 }
 
 /* Fixes navigation menu to the left side of the screen */
 #jumpMenu {
-    position: fixed;   
-    top: 0;            
-    bottom: 0;         
-    left: 0;           
-    
-    width: 200px;      
-    background-color: #f0f0f0;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+
+    background-color: rgb(255, 179, 2);
     border-right: 1px solid black;
 
     /* Spaces each link vertically */
     display: flex;
-    flex-direction: column;      
-    justify-content: space-around;  
-       
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
 
-    padding: 20px;               
+/* Alignment for fixed header and jumpMenu*/
+main {
+    margin-left: 220px;  
+    padding-top: 100px; 
 }
 
 h1{
+    padding-top: 50px;
     text-align: center;
+    font-size: 50px;
 }
 
 /* Lays articles out into rows and allows for wrapping upon window resizing */
@@ -48,21 +77,13 @@ h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
-    margin-left: 220px; /*  more than the jumpMenu width */
 }
+
 
 /* Aligns each article to the center with a width of 300px */
 article{
     text-align: center;
     width: 300px;
-
-    /* Created a border around each article so show separation*/
-    background-color: antiquewhite;
-    border: 1px solid black;
-    margin: 20px;
-    
-
 }
 
 /* Fixed the thank you message to the botton right corner */
@@ -72,13 +93,17 @@ article{
     bottom: 0;
     right: 0;
 
+    border: 1px solid black;
+    text-align: center;
+    background-color: rgb(50, 223, 253);
+
     margin: 0;
-    height: 100px;
-    width: 400px;
+    height: 80px;
+    width: 300px;
 
     display: flex;                
-    justify-content: flex-end;    /* horizontal: right */
-    align-items: flex-end;        /* vertical: bottom */
+    justify-content: center;    /* horizontal: center */
+    align-items: center;       /* vertical: center */
 
 
     font-size: 30px;
