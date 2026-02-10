@@ -36,18 +36,50 @@ body nav{
     font-family: 'Times New Roman', Times, serif;
 }
 
-#jumpMenu {
-    list-style: none;          /* remove bullets */
-    padding: 0;
-    margin: 0 auto;            /* centers the ul horizontally */
-    display: flex;
-    flex-direction: column;    /* stack links vertically */
-    align-items: center;       /* center each <li> horizontally */
-
+#menuItems button:hover{
     background-color: gold;
 }
 
 
+#jumpMenu {
+    display: none;              /* hide by default */
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 200px;
+    background-color: gold;
+}
+
+/* shows the displayed items when hovered over the recent articles or each article*/
+#recentArticles:hover + #jumpMenu, #jumpMenu:hover {
+    display: flex;             
+    flex-direction: column;   
+    align-items: center;       
+}
+
+/* Style the links normally */
+#jumpMenu li a {
+        display: flex;             
+    flex-direction: column;   
+    align-items: center; 
+
+    text-decoration: none; /* remove underline */
+    color: blue;          /* default text color */
+
+    width: 100%;           /* fill the menu width */
+    background-color: gold; /* default background */
+}
+
+/* Hover effect */
+#jumpMenu li a:hover {
+    display: flex;             
+    flex-direction: column;   
+    align-items: center; 
+
+    color: black;           /* text becomes black */
+    background-color: blue; /* background color changes */
+    width: 200px;
+}
 
 h1{
     text-align: center;
@@ -82,13 +114,15 @@ article:hover {
     transform: scale(1.1);    /* expands article */
 }
 
+/* changes the font size and type for the first letter of each paragrpah */
 article p:first-of-type::first-letter {
     font-family: "Times New Roman", serif;
     font-size: 36px;
 }
 
+/* arrow display for each google link*/
 a[href*="google.com"]::after{
-    content: url("../images/arrowarrow.png");
+    content: url("../images/arrow.png");
 }
 
 
