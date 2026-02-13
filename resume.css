@@ -1,0 +1,104 @@
+
+/* Base/Mobile design first */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    background-color: #f4f6f8;
+    color: #333;
+    max-width: 900px;       
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Name Header */
+h1 {
+    text-align: center;
+    background-color: #1f2a44;
+    color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+    font-size: 28px;        /* mobile friendly font size*/
+}
+
+/* Contact Info */
+address {
+    text-align: center;
+    font-style: normal;
+    margin-bottom: 30px;
+}
+
+address a {
+    color: #1f2a44;
+    text-decoration: none;
+}
+
+address a:hover {
+    text-decoration: underline;
+}
+
+/* Section Headings */
+h2 {
+    background-color: #1f2a44;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    margin-top: 30px;
+    font-size: 20px;        /* mobile friendly font size */
+}
+
+/* Projects */
+h3 a {
+    text-decoration: none;
+    color: #0b6efd;
+}
+
+h3 a:hover {
+    text-decoration: underline;
+}
+
+/* Paragraphs & Lists */
+p {
+    margin-bottom: 10px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+
+/* Desktop design */
+@media (min-width: 1000px) {
+
+    body {
+        padding: 40px;
+    }
+
+    /* Center the entire section */
+    h2, h3, p, ul {
+        max-width: 900px;          /* same width for all sections */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Add spacing between sections */
+    h2 {
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    p, ul {
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 40px;
+        letter-spacing: 2px;
+        padding: 30px;
+    }
+}

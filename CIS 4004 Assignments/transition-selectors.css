@@ -59,7 +59,7 @@ body nav{
 
 /* Style the links normally */
 #jumpMenu li a {
-        display: flex;             
+    display: flex;             
     flex-direction: column;   
     align-items: center; 
 
