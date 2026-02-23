@@ -1,46 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Pokémon Team Builder</title>
-        <link rel="stylesheet" href="pokemon.css">
-        <script src="pokemon.js" defer></script>
-    </head>
+<head>
+    <title>Pokémon Team Builder</title>
+    <link rel="stylesheet" href="pokemon.css">
+    <script src="pokemon.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Pokémon Team Builder</h1>
+    </header>
 
-        <body>
-            <h1>Name or ID</h1>
-
-            <!-- Search -->
+    <main>
+        <!-- Search Section -->
+        <section id="searchSection">
             <input type="text" id="pokemonInput" placeholder="Enter Pokémon name or ID">
             <button onclick="FindPokemon()">Find</button>
+        </section>
 
-            <!-- Pokemon display -->
+        <!-- Display Pokémon -->
+        <section id="pokemonDisplaySection">
             <div id="pokemonDisplay">
                 <img id="defaultPokemon" src="../images/Pokeball.png" alt="Default Pokémon" width="250">
             </div>
 
-            <!-- Sound controls -->
+            <!-- Audio Controls -->
             <div id="pokemonSound">
                 <audio id="pokemonAudio" preload="none"></audio>
-                
                 <button id="playButton">▶️</button>
                 <input id="volumeControl" type="range" min="0" max="1" step="0.01" value="0.5">
             </div>
+        </section>
 
-            <!-- Move selectors -->
+        <!-- Move Selectors -->
+        <section id="moveSelectorsSection">
+            <h2>Select Moves</h2>
             <div id="moveSelectors">
                 <select id="move1"></select>
                 <select id="move2"></select>
                 <select id="move3"></select>
                 <select id="move4"></select>
             </div>
-
-            <!-- Team button -->
             <button onclick="addToTeam()">Add to Team</button>
+        </section>
 
-            <!-- Team display -->
-            <div id="teamDisplay">
-                <h2>Your Team</h2>
+        <!-- Team Display -->
+        <section id="teamSection">
+            <h2>Your Team</h2>
+            <div id="teamDisplay">              
             </div>
-
-        </body>
+        </section>
+    </main>
+</body>
 </html>

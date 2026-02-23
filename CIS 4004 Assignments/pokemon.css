@@ -1,0 +1,62 @@
+
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin-bottom: 20px;
+    color: #ff0000;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#pokemonDisplay img {
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+#pokemonSound {
+    margin-top: 10px;
+}
+
+#moveSelectors select {
+    margin: 5px;
+    padding: 5px;
+    width: 300px;
+}
+
+#teamDisplay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+#teamDisplay div {
+    background-color: #fafafa;
+    padding: 10px;
+    border-radius: 8px;
+    width: 150px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+#teamDisplay img {
+    width: 100px;
+    margin-bottom: 5px;
+}

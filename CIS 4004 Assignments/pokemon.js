@@ -95,8 +95,8 @@ function displayTeam() {
     // Get the container where the team is shown
     const teamDiv = document.getElementById("teamDisplay");
 
-    // Reset the display but keep the header
-    teamDiv.innerHTML = "<h2>Your Team</h2>";
+    // Clear previous cards but keep the "Your Team" header
+    teamDiv.innerHTML = "";
 
     // Loop through each pokemon in the team
     team.forEach(member => {
