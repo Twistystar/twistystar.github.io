@@ -12,7 +12,7 @@ const audio = document.getElementById("pokemonAudio");
 const playButton = document.getElementById("playButton");
 const volumeControl = document.getElementById("volumeControl");
 
-// Play / pause toggle
+// Play/pause toggle
 playButton.addEventListener("click", () => {
     if (audio.paused) {
         audio.play();
@@ -27,7 +27,6 @@ playButton.addEventListener("click", () => {
 audio.addEventListener("ended", () => {
     playButton.textContent = "▶️";
 });
-
 
 // Volume slider
 volumeControl.addEventListener("input", () => {
@@ -171,6 +170,10 @@ async function FindPokemon() {
 
         // Save current pokemon selection
         currentPokemon = data;
+
+        // Remove the default image
+        const defaultImg = document.getElementById("defaultPokemon");
+        if (defaultImg) defaultImg.remove();
 
         // Populate the move dropdown menus
         populateMoveDropdowns(data.moves);
